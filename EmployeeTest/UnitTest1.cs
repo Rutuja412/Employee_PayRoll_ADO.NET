@@ -25,5 +25,13 @@ namespace EmployeeTest
             var result = repo.AddEmployee(employee);
             Assert.IsTrue(result);
         }
+        [TestMethod]
+        public void GetAllEmployeeShouldReturnListOfRecords()
+        {
+            EmployeeRepo repo = new EmployeeRepo();
+            repo.GetAllEmployee();
+            //Assert.IsTrue(result);
+        }
+
     }
 }
